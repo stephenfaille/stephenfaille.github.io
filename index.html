@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Coming Soon</title>
+  <title>Stephen Faille | Coming Soon</title>
+  <meta name="description" content="Stephen Faille's personal website, currently under construction. Stay tuned for updates on projects, blog posts, and more.">
+  <meta name="keywords" content="Stephen Faille, personal website, portfolio, blog, under construction, coming soon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
@@ -15,6 +19,8 @@
       min-height: 100vh;
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
+      padding: 1rem; /* Added padding for smaller screens */
+      box-sizing: border-box; /* Ensures padding doesn't add to width/height */
     }
     .container {
       background: rgba(255,255,255,0.10);
@@ -24,6 +30,8 @@
       text-align: center;
       backdrop-filter: blur(6px);
       border: 1.5px solid rgba(255,255,255,0.18);
+      max-width: 700px; /* Added max-width */
+      width: 100%; /* Ensures responsiveness */
     }
     h1 {
       font-size: 3rem;
@@ -37,6 +45,40 @@
       font-size: 1.3rem;
       color: #e0e0e0;
       margin-bottom: 2rem;
+      line-height: 1.6; /* Improved readability */
+    }
+    .future-sections p {
+      font-size: 1.1rem;
+      color: #c0c0c0;
+      margin-bottom: 1rem;
+    }
+    /* Added styling for future sections list */
+    .future-sections ul {
+      list-style: none; /* Removes default bullets */
+      padding-left: 0; /* Removes default padding */
+      margin-bottom: 1.5rem;
+    }
+    .future-sections ul li {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.5rem 0.75rem;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      color: #d0d0d0;
+    }
+    .social-links {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .social-links a {
+      margin: 0 0.75rem;
+      display: inline-block;
+      color: #fff; /* Icon color */
+      font-size: 2rem; /* Icon size */
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #ffe082; /* Icon hover color */
     }
     .signature {
       margin-top: 2.5rem;
@@ -47,10 +89,20 @@
     }
     @media (max-width: 600px) {
       .container {
-        padding: 1.2rem 0.5rem;
+        padding: 1.5rem 1rem; /* Adjusted padding */
       }
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem; /* Adjusted font size */
+      }
+      p {
+        font-size: 1.1rem; /* Adjusted font size */
+      }
+      .future-sections ul li {
+        font-size: 0.95rem;
+      }
+      .social-links a {
+        margin: 0 0.5rem;
+        font-size: 1.8rem; /* Adjust icon size for mobile */
       }
     }
   </style>
@@ -58,9 +110,40 @@
 <body>
   <div class="container">
     <h1>Coming Soon</h1>
-    <p>This site is under construction.<br>
-    Stay tuned for updates!</p>
+    <p>My personal website is currently under construction.<br>
+    I'm working hard to bring you a great online experience. Stay tuned for updates!</p>
+
+    <div class="future-sections">
+      <p>Soon, you'll find sections like:</p>
+      <ul>
+        <li><i class="fas fa-user-circle"></i> About Me</li>
+        <li><i class="fas fa-briefcase"></i> My Projects / Portfolio</li>
+        <li><i class="fas fa-pen-alt"></i> Blog / Articles</li>
+      </ul>
+    </div>
+
+    <div class="social-links">
+      <!-- Replace # with your actual links -->
+      <a href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" title="Twitter / X" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+      <!-- Example for another platform like Instagram:
+      <a href="#" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      -->
+    </div>
+
     <div class="signature">— Stephen Faille</div>
   </div>
+  <!-- You can add a script for a countdown timer here if desired -->
+  <!-- Placeholder for Analytics Script (e.g., Google Analytics) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR_TRACKING_ID');
+  </script>
+  -->
 </body>
 </html>
